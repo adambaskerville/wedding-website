@@ -200,7 +200,7 @@ $(document).ready(function () {
             address: 'Rivervale Barn, Yateley',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Adam Baskerville +44 7896941917."
+            description: "We can't wait to see you at the wedding. For any queries or issues, please contact Charlotte or Adam."
         }
     });
 
