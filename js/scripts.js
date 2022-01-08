@@ -164,7 +164,6 @@ $(document).ready(function () {
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
 
-
     /********************** Toggle Map Content **********************/
     $('#btn-show-map').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
@@ -219,7 +218,7 @@ $(document).ready(function () {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             
-            $.post('https://script.google.com/macros/s/AKfycbyFYgaFWlh6lZDSDAot31TtT5gY7BnSR5MqfWjm3C8cwRohMx2mmtRp4P9YfBUUJtQfPw/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwkQrvmfO3TGnBTLq_AdaYVoLXvJcocjG1Jm8Fd6EQYFi7hNZsCdhp2Em3ZNP6YvndAXg/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -242,7 +241,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var location = {lat: 51.35033789, lng: -0.8263611000};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
@@ -256,7 +255,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: 51.35033789, lng: -0.8263611000};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,

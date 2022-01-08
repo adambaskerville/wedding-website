@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Charlotte & Adam Are Getting Married">
     <meta property="og:description" content="We would like to invite you to our wedding.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/adambaskerville/wedding-website/master/img/hero-min.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/adambaskerville/wedding-website/master/img/hero-min.png">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
@@ -44,6 +44,8 @@
                     <nav>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="#places-to-stay" class="login">Places to stay</a></li>
+                            <li><a href="#schedule" class="login">Schedule</a></li>
                             <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
@@ -85,6 +87,15 @@
     </div>
 </section>
 
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://youtu.be/Ebpg4b1dCIc',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, opacity:1}">
+    </div>
+    <div id="video-content">
+        <h5>Rivervale Barn</h5>
+    </div>
+</section>
+
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>How do I get there?</h3>
@@ -92,7 +103,7 @@
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4">
                 <div class="text-center">
                     <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
                         <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
@@ -100,21 +111,51 @@
                 </div>
                 <div id="map-content" class="pointer-events-auto">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <h5>Rivervale Barn</h5>
-                            <p>Mill Farm, Mill Lane, Yateley GU46 7SS, Hampshire, UK</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Dr. Adam Baskerville</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+447896941917">+44 7896941917</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+447896941917">+44 7896941917</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
+                            <p>Mill Farm, Mill Lane, Yateley, GU46 7SS, Hampshire, UK</p>
                             <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
                                 map</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <div class="col-md-6">
+                            <h5>Dr. Adam Baskerville</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+447896941917">+44 7896941917</a><br>
+                            </p>
+                            <h5>Dr. Charlotte Godfrey</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+447513236526">+44 7513236526</a><br>
+                            </p>
+                        </div>
+-->
+<section id="places-to-stay" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Places to stay</h3>
+                <div class="row"></div>
+                    <div class="col-md-6">
+                        <h5>Holiday Inn</h5>
+                        <p>Lynchford Road, Farnborough, GU14 6A2 Hampshire</p>
+                        <a href="https://www.ihg.com/holidayinn/hotels/gb/en/farnborough/fabht/hoteldetail" class="btn btn-accent btn-small" target="_blank"><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</a>
+                        <br><br><br>
+                        <h5>Lismoyne Hotel</h5>
+                        <p> 45 Church Road, Fleet, GU51 4NE, Hampshire</p>
+                        <a href="https://www.lismoynehotel.com/" class="btn btn-accent btn-small" target="_blank"><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>The Casa Hotel</h5>
+                        <p>Handford Lane, Yateley, GU46 6BT, Hampshire</p>
+                        <a href="https://thecasahoteluk.com/" class="btn btn-accent btn-small" target="_blank"><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</a>
+                        <br><br><br>
+                        <h5>Hilton St Anne's Manor Hotel</h5>
+                        <p>London Road, Wokingham, RG40 1ST, Hampshire</p>
+                        <a href="https://www.hilton.com/en/hotels/brasadi-doubletree-st-annes-manor/?WT.mc_id=zMDEC0UK1DT2NaturalSearch3Google_LGHotelListing4DGGeneric_5LocalSearch6BRASADI7EN8i98752" class="btn btn-accent btn-small" target="_blank"><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</a>
                     </div>
                 </div>
             </div>
@@ -215,7 +256,7 @@
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.js"></script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZc-OcyrIln3NGKNzrcVdrNd5HUhVE8Cw&callback=initMap"></script>
 <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
