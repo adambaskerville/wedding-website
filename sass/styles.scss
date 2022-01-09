@@ -12,6 +12,18 @@
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+input {
+  width: 400px;
+  padding: 0 18px;
+  font-weight: 600;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 3;
+  font-weight: 600;
+}
 .group:after {
   content: "";
   display: table;
@@ -22,6 +34,10 @@ Global Styles
 }
 .no-margin {
   margin: 0;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
 }
 a {
   color: $accent-color;
@@ -417,6 +433,7 @@ Intro
 }
 #intro p {
   text-align: center;
+  font-size: 18px;
 }
 
 /* ==========================================================================
@@ -428,6 +445,7 @@ Features-stack
   p {
     margin-bottom: 0;
     padding-bottom: 0;
+    font-size: 18px;
   }
   h3 {
     margin: 0 0 20px 0;
@@ -543,6 +561,7 @@ Features-stack
   }
   p {
     color: #ACB1B4;
+    font-size:18px;
   }
   .btn {
     margin-top: 10px;
