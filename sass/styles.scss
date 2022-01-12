@@ -15,22 +15,21 @@ Global Styles
 #bannerimage {
   object-fit: cover;
   width: 100%;
+  max-width: 100%;
   height: 300px;
   background-image: url(https://raw.githubusercontent.com/adambaskerville/wedding-website/master/img/spinney.jpg);
   background-color: rgba(17, 17, 17, 0.5);
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: relative;
   overflow: hidden;
 }
 .image-bg {
-  object-fit: cover;
   width: 100%;
-  height: 300px;
-  padding-top: 100px;
-  position: relative;
-  background: rgba(17, 17, 17, 0.5);
-  text-align: center;
 }
 .banner-img {
   width: 300px;
